@@ -114,7 +114,7 @@ def api_login():
         return jsonify({'success': False, 'message': 'Senha incorreta ou a conta não existe.'}), 401
     login_user(user)
     # Redirect to YouTube after successful login
-    return jsonify({'success': True, 'redirect': 'https://youtube.com/@SindromeGames?sub_confirmation=1'}), 200
+    return jsonify({'success': True, 'redirect': 'https://cdn.vlipsy.com/clips/3hEsFXt9/360p-watermark.mp4?token=v1_f_1750195744_8G1fCZMzo'}), 200
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
